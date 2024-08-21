@@ -1,99 +1,145 @@
-* {
+*{
     padding: 0;
     box-sizing: border-box;
     margin: 0;
 }
-
-body {
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: white;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
-
-.container {
-    background-color: #f2f2f2;
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-}
-
-.header {
-    width: 100%;
-    height: 15vh;
-    background-color: rgb(10, 20, 32);
+.nav1{
+    width: 99.9%;
+    height: 8vh;
+    background-color: #0f292f;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
 }
-
-.left-header {
-    width: 40%;
-    height: 14vh;
+.nav1 .left-nav1{
+    width: 30%;
+    height: 8vh;
+    background-color: #cb2d6f;
+    padding: 20px;
+}
+.nav1 .left-nav1 h3{
+    color: white;
+    font-size: 13px;
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.nav1 .right-nav1{
+    width: 69.99%;
+    height: 8vh;
+    background-color:#0f292f;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    
+}
+.nav1 .right-nav1 h3{
+    font-weight: normal;
+    font-size: 14px;
+}
+.nav1 .right-nav1 ul{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    list-style: none;
+    color: white;
+}
+.nav1 .right-nav1 a{
+    text-decoration: none;
+    color: white;
+}
+.nav2{
+    width: 99.9%;
+    height: 12vh;
+    background-color:#aaa3bd;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.nav2 .left-nav2{
+    width: 30.99%;
+    height: 12vh;
+    /* background-color: #0f292f; */
     display: flex;
     align-items: center;
     justify-content: center;
+    /* color: white; */
+    letter-spacing: 1px;
+    font-family:cursive;
 }
-
-.left-header a {
-    text-decoration: none;
-    color: white;
+.nav2 .left-nav2 h3{
     font-size: 25px;
 }
 
-.left-header a:hover {
-    color: rgb(32, 95, 190);
-    transition: 0.2s ease-in-out;
-}
-
-.right-header {
-    width: 40%;
-    height: 14vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.right-header ul {
+.nav2 .right-nav2{
+    width: 60%;
+    height: 12vh;
     display: flex;
     flex-direction: row;
-    gap: 3rem;
-}
-
-.right-header li {
-    list-style: none;
-}
-
-.right-header a {
-    text-decoration: none;
-    font-size: 17px;
-    color: white;
-}
-
-/* Main content design */
-.main-content {
-    width: 100%;
-    height: 60vh;
-    background-color: #f2f2f2;
-}
-
-.left-content {
-    width: 40%;
-    display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 40px;
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
 }
-
-.left-content h2 {
-    font-size: 35px;
+.nav2 .right-nav2 ul{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    list-style: none;
 }
-
-/* Footer design */
-.footer {
+.nav2 .right-nav2 a{
+    text-decoration: none;
+    color: black;
+}
+.main-content{
     width: 100%;
-    height: 25vh;
-    background-color: rgb(32, 95, 190);
-    border-top-left-radius: 40px;
+    height:80vh ;
+    background-image: url('./static/imgs/sewing1.jpeg') ;
+    background-size:cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row;
+}
+.left-main{
+    width: 50%;
+    /* background-color: aliceblue; */
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.left-main p{
+    font-size: 50px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 900;
+    color: white;
+  
+}
+.left-main .buttons{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
 
+.left-main .buttons button{
+    width: 150px;
+    height: 40px;
+    border: none;
+    background-color: #cb2d6f;
+    color: white;
+    border-radius: 0.5rem;
+}
+.right-main{
+    width: 50%;
 }

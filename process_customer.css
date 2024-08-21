@@ -1,0 +1,206 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    height: auto;
+}
+.container .header{
+    width: 85%;
+    height: 10vh;
+    background-color: #f2f2f2;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.container .header .left-header{
+    width: 40%;
+    height: 10vh;
+}
+.container .header .right-header{
+    width: 40vh;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.container h1 {
+    font-size: 20px;
+}
+
+.main-content {
+    margin-top: 100px;
+    width: 90%;
+    height: 120vh;
+    /* background-color: #f2f2f2; */
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.top-content {
+    width: 90%;
+    height: 50vh;
+    background-color: rgb(197, 197, 225);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border-radius: 10px;
+}
+
+.top-content .personal-details {
+    display: flex;
+    flex-direction: column;
+    /* background-color: #864343; */
+    width: 40%;
+    padding: 30px;
+    gap: 1.5rem;
+}
+
+.top-content .personal-details input {
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.top-content .order-details {
+    display: flex;
+    flex-direction: column;
+    /* background-color: #864343; */
+    width: 40%;
+    padding: 30px;
+    gap: 1.5rem;
+}
+
+.top-content .order-details input {
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.top-content .order-details textarea {
+    height: 150px;
+    padding: 10px;
+    border: none;
+}
+
+.top-content h2 {
+    text-align: center;
+}
+
+.bottom-content {
+    width: 90%;
+    height: 80vh;
+    padding: 10px;
+    background-color: rgb(197, 197, 225);
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-evenly; */
+    align-items: center;
+    border-radius: 10px;
+}
+
+.bottom-content .middle-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 90%;
+    height: 50vh;
+}
+
+.bottom-content .middle-content .trauser {
+    width: 30%;
+    height: 40vh;
+    /* background-color: rgb(162, 148, 148); */
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.bottom-content .middle-content .trauser input {
+    height: 40px;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+
+}
+
+.bottom-content .middle-content .shirt {
+    width: 30%;
+    height: 40vh;
+    /* background-color: rgb(162, 148, 148); */
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.bottom-content .middle-content .shirt input {
+    height: 40px;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.bottom-content .middle-content .skirt {
+    width: 30%;
+    height: 40vh;
+    /* background-color: rgb(162, 148, 148); */
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.bottom-content .middle-content .skirt input {
+    height: 40px;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+.container .buttons{
+    width: 80%;
+    height: 20vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.buttons button{
+    width: 300px;
+    height: 50px;
+    background-color: blue;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+.container .buttons h2{
+    font-size: 20px;
+}
