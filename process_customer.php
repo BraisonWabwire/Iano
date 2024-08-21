@@ -15,7 +15,7 @@
                 <div class="left-header"></div>
                 <div class="right-header">
                     <h1>Customer</h1>
-                    <a href="">Home</a>
+                    <a href="homepage.php">Home</a>
                 </div>
 
 

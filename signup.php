@@ -56,7 +56,7 @@
                     <input type="password" name="confirm_password" placeholder="Confirm Password" required>
                     <div class="buttons">
                         <button type="submit">Signup</button>
-                        <h2>Already have an account? Click <a href="./login.html">here</a> to login</h2>
+                        <h2>Already have an account? Click <a href="./login.php">here</a> to login</h2>
                         <h2>Return to <a href="./index.html">home</a></h2>
                     </div>
                 </div>
