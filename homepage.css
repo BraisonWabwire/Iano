@@ -24,6 +24,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+   
 }
 
 .left-header {
@@ -32,6 +33,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 1rem;
 }
 
 .left-header a {
@@ -41,10 +43,9 @@ body {
 }
 
 .left-header a:hover {
-    color: rgb(32, 95, 190);
+    color: #cb2d6f;
     transition: 0.2s ease-in-out;
 }
-
 .right-header {
     width: 40%;
     height: 14vh;
@@ -76,24 +77,83 @@ body {
     background-color: #f2f2f2;
 }
 
-.left-content {
+.main-content .left-content {
     width: 40%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 40px;
+    padding: 50px;
 }
 
+
 .left-content h2 {
-    font-size: 35px;
+    font-size: 36px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 /* Footer design */
 .footer {
     width: 100%;
     height: 25vh;
-    background-color: rgb(32, 95, 190);
+    background-color: #cb2d6f;
     border-top-left-radius: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px;
+}
 
+.footer .section1 {
+    width:20%;
+    height: 20vh;
+    /* background-color: #f2f2f2; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.7rem;
+    border-right: 2px solid black;
+    letter-spacing: 0.8px;
+}
+.footer .section1 h2{
+    text-align: center;
+    font-size: 14px;
+}
+.footer .section2 {
+    width: 30%;
+    height: 20vh;
+    /* background-color: #fff; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.7rem;
+    border-right: 2px solid black;
+    letter-spacing: 0.8px;
+
+}
+.footer .section2 h2{
+    text-align: center;
+    font-size: 14px;
+}
+.footer .section3 {
+    width: 20%;
+    height: 20vh;
+    /* background-color: #fff; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.7rem;
+    letter-spacing: 0.8px;
+}
+.footer .section3 h2{
+    text-align: center;
+    font-size: 14px;
+
+}
+.footer .section3 a{
+    text-decoration: none;
 }

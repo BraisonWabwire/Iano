@@ -68,6 +68,7 @@
 .nav2 .left-nav2{
     width: 30.99%;
     height: 12vh;
+    padding-left: 50px;
     /* background-color: #0f292f; */
     display: flex;
     align-items: center;
@@ -75,6 +76,7 @@
     /* color: white; */
     letter-spacing: 1px;
     font-family:cursive;
+    gap: 2rem;
 }
 .nav2 .left-nav2 h3{
     font-size: 25px;
@@ -87,10 +89,10 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    font-size: 15px;
+    font-size: 16px;
     letter-spacing: 1px;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    
+    text-transform: lowercase;
 }
 .nav2 .right-nav2 ul{
     display: flex;
@@ -101,6 +103,9 @@
 .nav2 .right-nav2 a{
     text-decoration: none;
     color: black;
+}
+.nav2 .right-nav2 a:hover{
+    color: #cb2d6f;
 }
 .main-content{
     width: 100%;
@@ -138,8 +143,51 @@
     border: none;
     background-color: #cb2d6f;
     color: white;
+    cursor: pointer;
     border-radius: 0.5rem;
+    box-shadow: 2px 3px 10px rgba(17, 16, 16, 0.3);
 }
 .right-main{
     width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+    /* background-color: #aaa3bd; */
+    gap: 1rem;
 }
+.right-main form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.right-main textarea{
+    width: 400px;
+    height: 100px;
+    padding-left: 10px;
+    padding-top: 10px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+.right-main textarea:focus{
+    border: 3px solid #cb2d6f;
+}
+.right-main p{
+    color: white;
+    font-size: 17px;
+}
+.right-main form button{
+    width: 100px;
+    height: 40px;
+    background-color: #cb2d6f;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border: none;
+    margin-left: 280px;
+    color: white;
+    cursor: pointer;
+}
+
+

@@ -12,10 +12,13 @@
     <form action="process_customer.php" method="POST" enctype="multipart/form-data">
         <div class="container">
             <div class="header">
-                <div class="left-header"></div>
+                <div class="left-header">
+                    <img src="./logo.png" alt="" srcset="" style="width: 75px; height: 75px;">
+                    <h1>IWear Cloathline</h1>
+                </div>
                 <div class="right-header">
                     <h1>Customer</h1>
-                    <a href="homepage.php">Home</a>
+                    <a href="admin-dashboard.php">admin dashbord</a>
                 </div>
 
 
@@ -122,15 +125,15 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 $fileDestination = 'uploads/' . $fileNameNew;
                 move_uploaded_file($fileTmpName, $fileDestination);
             } else {
-                echo "Your file is too big!";
+                echo "<script>alert('file is too big!');</script>";
                 exit();
             }
         } else {
-            echo "You cannot upload files of this type!";
+            echo "<script>alert('You cannot upload files of this type!');</script>";
             exit();
         }
     } else {
-        echo "There was an error with the file upload!";
+        echo "<script>alert('Error with image upload!');</script>";
         exit();
     }
 
@@ -157,7 +160,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             VALUES ('$name', '$phone_number', '$email', '$order_date', '$description', '$payment', '$fileDestination', '$waist_trauser', '$thigh', '$hips_trauser', '$knees', '$bottom', '$full_length_trauser', '$waist_skirt', '$hips_skirt', '$full_length_skirt', '$shoulder', '$chest', '$waist_line', '$full_length_shirt', '$sleeve')";
 
     if ($conn->query($sql) === TRUE) {
-        echo "New record created successfully";
+        echo "<script>alert('Details added successfully!');</script>";
     } else {
         echo "Error: " . $sql . "<br>" . $conn->error;
     }

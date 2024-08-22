@@ -22,14 +22,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         if (password_verify($password, $hashed_password)) {
             $_SESSION['user_id'] = $id;
-            echo "Login successful!";
+            echo "<script>alert('Login successful!');</script>";
             header("Location: homepage.php");
             exit;
         } else {
-            echo "Invalid password!";
+            echo "<script>alert('Invalid password!');</script>";
         }
     } else {
-        echo "No account found with that email!";
+        echo "<script>alert('No account found with that email!');</script>";
     }
 
     $stmt->close();
@@ -39,17 +39,20 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="login.css">
 </head>
+
 <body>
     <div class="container">
         <div class="form">
             <form action="" method="POST">
                 <div class="form-box">
+                    <img src="./logo.png" alt="" srcset="" style="width: 75px; height: 75px;">
                     <h2>Login</h2>
                     <input type="email" name="email" placeholder="Enter Email" required>
                     <input type="password" name="password" placeholder="Password" required>
@@ -63,4 +66,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
     </div>
 </body>
+
 </html>

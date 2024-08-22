@@ -12,8 +12,7 @@ CREATE TABLE users (
 
 -- creating the signup feature
 
-CREATE DATABASE tailoring_business;
-USE tailoring_business;
+
 
 -- Create the database
 CREATE DATABASE tailoring_business;

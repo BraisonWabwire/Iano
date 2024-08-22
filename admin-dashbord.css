@@ -526,13 +526,13 @@ body {
 }
 .gridView .products-row {
   margin: 8px;
-  width: calc(25% - 16px);
+  width: 100%;
   background-color: var(--app-content-secondary-color);
   padding: 8px;
   border-radius: 4px;
   cursor: pointer;
   transition: transform 0.2s;
-  position: relative;
+  /* position: relative; */
 }
 .gridView .products-row:hover {
   transform: scale(1.01);

@@ -12,9 +12,10 @@ body {
 .container {
     background-color: white;
     width: 100%;
-    height: auto;
+    height: 80vh;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     padding-top: 20px;
 }
@@ -24,9 +25,13 @@ body {
     padding: 40px;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
     background-color: #f2f2f2;
+    box-shadow: 2px 3px 10px rgba(17, 16, 16, 0.3);
 }
+
 .form-box h2{
     text-align: center;
 }
@@ -36,16 +41,20 @@ body {
     border-radius: 5px;
     border: none;
     padding: 10px;
+    outline: none;
+}
+.form-box input:focus{
+    border: 2px solid #cb2d6f ;
 }
 .form-box .buttons{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 1.5rem;
+    gap: 1rem;
 }
 .form-box .buttons button{
-    width: 100px;
+    width: 300px;
     height: 40px;
     background-color: #cb2d6f;
     color: white;
