@@ -48,3 +48,14 @@ CREATE TABLE customers (
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
+CREATE DATABASE image_gallery;
+
+USE image_gallery;
+
+CREATE TABLE images (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    size VARCHAR(50),
+    price DECIMAL(10, 2),
+    image_path VARCHAR(255) NOT NULL
+);

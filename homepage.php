@@ -7,6 +7,22 @@ if (!isset($_SESSION['user_id'])) {
 }
 ?>
 
+<?php
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "image_gallery";
+
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+$sql = "SELECT name, size, price, image_path FROM images";
+$result = $conn->query($sql);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -34,11 +50,29 @@ if (!isset($_SESSION['user_id'])) {
             </div>
         </div>
         <div class="main-content">
-            <div class="left-content">
+            <div class="top-content">
                 <h2>Welcome to I clothline designs, the best clothing platform, view our latest clothes..</h2>
             </div>
-            <div class="right-content">
-
+            <div class="bottom-content">
+                <div class="gallery-container">
+                    <h1>Image Gallery</h1>
+                    <div class="gallery">
+                        <?php
+                        if ($result->num_rows > 0) {
+                            while ($row = $result->fetch_assoc()) {
+                                echo "<div class='gallery-item'>";
+                                echo "<img src='" . $row['image_path'] . "' alt='" . $row['name'] . "'>";
+                                echo "<h2>" . $row['name'] . "</h2>";
+                                echo "<p>Size: " . $row['size'] . "</p>";
+                                echo "<p>Price: Ksh." . $row['price'] . "</p>";
+                                echo "</div>";
+                            }
+                        } else {
+                            echo "No images found.";
+                        }
+                        ?>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="footer">
@@ -76,3 +110,7 @@ if (!isset($_SESSION['user_id'])) {
 </body>
 
 </html>
+
+<?php
+$conn->close();
+?>
